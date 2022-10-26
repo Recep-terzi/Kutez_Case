@@ -1,13 +1,43 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.app-container {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.kutez-title {
+  font-family: "Poppins Bold";
+  font-size: 43px;
+  color: #2b2e39;
+}
+.kutez-next-title {
+  font-family: "Poppins Extra Bold";
+  font-size: 85px;
+  color: #2b2e39;
+}
+.kutez-input form {
+  display: flex;
+}
+.kutez-input form .order-date-input,
+.kutez-input form .fabric-type-input,
+.kutez-input form .quantity-input {
+  margin-right: 30px;
+}
+.kutez-input form .order-date-input input,
+.kutez-input form .fabric-type-input input,
+.kutez-input form .quantity-input input {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  border: 1px solid #000;
 }
