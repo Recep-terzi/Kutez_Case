@@ -1,43 +1,111 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  background: radial-gradient(
+    circle,
+    rgba(36, 20, 219, 1) 0%,
+    rgba(172, 110, 255, 1) 100%
+  );
 }
 .app-container {
-  margin-top: 30px;
-  margin-left: 100px;
+  width: 1100px;
+  height: 970px;
+  padding-right: 200px;
+  border-top-right-radius: 15% 30%;
+  border-bottom-right-radius: 15% 30%;
+  background-color: #fff;
 }
 .kutez-title {
-  font-family: "Poppins Bold";
+  margin-left: 100px;
+  font-family: "Poppins";
+  font-weight: bold;
   font-size: 43px;
+  padding-top: 30px;
   color: #2b2e39;
+  margin-bottom: 120px;
 }
+
 .kutez-next-title {
-  font-family: "Poppins Extra Bold";
+  font-family: "Poppins";
+  font-weight: bolder;
+  margin-left: 100px;
+  width: 800px;
   font-size: 85px;
   color: #2b2e39;
+  margin-bottom: 60px;
 }
-.kutez-input form {
+form .kutez-input {
   display: flex;
+  margin-left: 100px;
 }
-.kutez-input form .order-date-input,
-.kutez-input form .fabric-type-input,
-.kutez-input form .quantity-input {
-  margin-right: 30px;
+form .kutez-input .order-date-input,
+form .kutez-input .fabric-type-input,
+form .kutez-input .quantity-input {
+  margin-right: 60px;
 }
-.kutez-input form .order-date-input input,
-.kutez-input form .fabric-type-input input,
-.kutez-input form .quantity-input input {
+form .kutez-input .fabric-type-input select:focus {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+form .kutez-input .fabric-type-input select {
+  width: 248px;
+}
+form .kutez-input .order-date-input input,
+form .kutez-input .fabric-type-input input,
+form .kutez-input .fabric-type-input select,
+form .kutez-input .quantity-input input {
   border-radius: 20px;
   border: none;
   padding: 10px;
   border: 1px solid #000;
+  font-family: "Poppins";
+  font-weight: normal;
+  font-size: 18px;
+  color: #8d9092;
+}
+.kutez-button {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+.kutez-button button {
+  background: linear-gradient(
+    60deg,
+    rgba(36, 20, 219, 1) 0%,
+    rgba(172, 110, 255, 1) 100%
+  );
+  border: none;
+  border-radius: 20px;
+  padding: 10px 50px 10px 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.kutez-info h3 {
+  font-family: "Poppins";
+  margin-left: 100px;
+
+  font-weight: lighter;
+  font-size: 27px;
+  margin-top: 30px;
+  color: #2b2e39;
+}
+.kutez-info h3 span {
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 27px;
+}
+.order-date-input i {
+  position: absolute;
+  margin-top: 12px;
+  font-size: 25px;
+  margin-left: 210px;
+}
+.quantity-input i {
+  position: absolute;
+  margin-top: 12px;
+  font-size: 25px;
+  margin-left: 210px;
+  color: gray;
 }
