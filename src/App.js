@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 function App() {
-  const [date, setDate] = useState();
-  const [type, setType] = useState();
-  const [quantity, setQuantity] = useState();
-  const [days, setDays] = useState();
+  const [date, setDate] = useState(null);
+  const [type, setType] = useState(null);
+  const [quantity, setQuantity] = useState(null);
+  const [days, setDays] = useState(null);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (type === "cotton") {
@@ -60,11 +60,17 @@ function App() {
               placeholder="Order Date"
               name="date"
               value={date}
+              required
               onChange={(e) => setDate(e.target.value)}
             />
           </div>
           <div className="fabric-type-input">
-            <select value={type} onChange={(e) => setType(e.target.value)}>
+            <i class="fa-solid fa-chevron-down"></i>
+            <select
+              value={type}
+              required
+              onChange={(e) => setType(e.target.value)}
+            >
               <option value="" disabled selected hidden>
                 Fabric Type
               </option>
@@ -73,9 +79,13 @@ function App() {
             </select>
           </div>
           <div className="quantity-input">
-            <i class="fa-solid fa-circle-info"></i>
+            <i
+              class="fa-solid fa-circle-info"
+              title="Shipping Dates May Vary Based on Quantity"
+            ></i>
             <input
               type="number"
+              required
               placeholder="Quantity"
               max="100"
               value={quantity}
@@ -89,7 +99,11 @@ function App() {
       </form>
       <div className="kutez-info">
         <h3>
-          Your Estimated Shipping Time Is <span>{days}</span>
+          <span>
+            {date === null
+              ? "Please Fill All Information Correctly."
+              : "Your Estimated Shipping Time Is : " + days}
+          </span>
         </h3>
       </div>
     </div>

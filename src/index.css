@@ -51,6 +51,7 @@ form .kutez-input .fabric-type-input select:focus {
 }
 form .kutez-input .fabric-type-input select {
   width: 248px;
+  -webkit-appearance: none;
 }
 form .kutez-input .order-date-input input {
   width: 248px;
@@ -111,4 +112,84 @@ form .kutez-input .quantity-input input {
   font-size: 25px;
   margin-left: 210px;
   color: gray;
+}
+.fabric-type-input i {
+  position: absolute;
+  margin-top: 15px;
+  font-size: 20px;
+  margin-left: 200px;
+  color: gray;
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    width: 100px;
+    padding-left: 70px;
+    padding-top: 100px;
+    height: 100%;
+    padding-bottom: 38px;
+  }
+  .kutez-title {
+    font-size: 30px;
+    width: 230px;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+  }
+  .kutez-next-title {
+    width: 0;
+    font-size: 35px;
+    width: 230px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  form .kutez-input {
+    display: block;
+  }
+  .kutez-info h3 {
+    width: 230px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .kutez-info h3 span {
+    font-size: 20px;
+  }
+  form .kutez-input {
+    margin: 0;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .kutez-button {
+    margin: 0;
+  }
+  form .kutez-input .order-date-input input,
+  form .kutez-input .fabric-type-input input,
+  form .kutez-input .fabric-type-input select,
+  form .kutez-input .quantity-input input {
+    margin-bottom: 30px;
+  }
+  form .kutez-input .order-date-input input {
+    width: 200px;
+  }
+  form .kutez-input .fabric-type-input select {
+    width: 220px;
+  }
+  form .kutez-input .quantity-input input {
+    width: 200px;
+  }
+  .kutez-button button {
+    width: 250px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .fabric-type-input i {
+    margin-left: 180px;
+  }
+  .quantity-input i {
+    margin-left: 180px;
+  }
 }
