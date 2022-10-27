@@ -100,7 +100,7 @@ function App() {
       <div className="kutez-info">
         <h3>
           <span>
-            {date === null
+            {quantity === null
               ? "Please Fill All Information Correctly."
               : "Your Estimated Shipping Time Is : " + days}
           </span>
