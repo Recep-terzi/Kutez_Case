@@ -1,5 +1,4 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
 function App() {
   const [date, setDate] = useState(null);
   const [type, setType] = useState(null);
