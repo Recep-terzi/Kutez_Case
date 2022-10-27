@@ -8,13 +8,12 @@ function App() {
       <form>
         <div className="kutez-input">
           <div className="order-date-input">
-            <i class="fa-regular fa-calendar"></i>
-            <input type="text" placeholder="Order Date" />
+            <input type="Date" placeholder="Order Date" name="date" />
           </div>
           <div className="fabric-type-input">
             <select>
               <option value="" disabled selected hidden>
-                Choose a drink
+                Fabric Type
               </option>
               <option value="cotton">Cotton</option>
               <option value="linen">Linen</option>

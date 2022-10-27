@@ -52,6 +52,9 @@ form .kutez-input .fabric-type-input select:focus {
 form .kutez-input .fabric-type-input select {
   width: 248px;
 }
+form .kutez-input .order-date-input input {
+  width: 248px;
+}
 form .kutez-input .order-date-input input,
 form .kutez-input .fabric-type-input input,
 form .kutez-input .fabric-type-input select,
@@ -59,7 +62,7 @@ form .kutez-input .quantity-input input {
   border-radius: 20px;
   border: none;
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid gray;
   font-family: "Poppins";
   font-weight: normal;
   font-size: 18px;
