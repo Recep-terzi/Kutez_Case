@@ -10,13 +10,17 @@ function App() {
     if (type === "cotton") {
       if (quantity <= 50) {
         console.log("2 gün cotton");
-        setDays("2 gün");
+        const today = new Date(date);
+        today.setDate(today.getDate() + 2);
+        setDays(today.toDateString());
         setDate("");
         setType("");
         setQuantity("");
       } else {
         console.log("3 gün");
-        setDays("3 gün");
+        const today = new Date(date);
+        today.setDate(today.getDate() + 3);
+        setDays(today.toDateString());
         setDate("");
         setType("");
         setQuantity("");
@@ -25,13 +29,17 @@ function App() {
     if (type === "linen") {
       if (quantity <= 50) {
         console.log("4 gün linen");
-        setDays("4 gün");
+        const today = new Date(date);
+        today.setDate(today.getDate() + 4);
+        setDays(today.toDateString());
         setDate("");
         setType("");
         setQuantity("");
       } else {
         console.log("5 gün");
-        setDays("5 gün");
+        const today = new Date(date);
+        today.setDate(today.getDate() + 5);
+        setDays(today.toDateString());
         setDate("");
         setType("");
         setQuantity("");
